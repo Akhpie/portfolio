@@ -173,7 +173,7 @@
             <div class="swiper-slide">
                 <a href="https://akscommerce.netlify.app" target="_blank"> My commerce
                     <img src="shopping ss.png" /></a>
-                <p class="project-text">A mini Ecommerce webiste made using React, check it out :D</p>
+                <p class="project-text">A mini Ecommerce website made using React, check it out :D</p>
             </div>
             <div class="swiper-slide">
                 <a href="https://parallexus.netlify.app/index.html" target="_blank"> parallexus
@@ -237,10 +237,24 @@
 <script src="prof.js"></script>
 <script type="text/javascript" src="vanilla-tilt.js"></script>
 <script>
-    VanillaTilt.init(document.querySelector(".card"), {
-        max: 25,
-        speed: 400
-    });
+    function isMobileDevice() {
+        return /Mobi/i.test(navigator.userAgent) || /Android/i.test(navigator.userAgent);
+    }
+
+    // Check if it's not a mobile device before initializing the tilt effect
+    if (!isMobileDevice()) {
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+    } else {
+        // Deactivate tilt effect on mobile devices by destroying the instance
+        const cardElement = document.querySelector(".card");
+        const tiltInstance = VanillaTilt.getInstance(cardElement);
+        if (tiltInstance) {
+            tiltInstance.destroy();
+        }
+    }
 </script>
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>

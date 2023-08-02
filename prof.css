@@ -695,7 +695,7 @@ p {
 
 .project-section {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .project-text {
   color: white;
@@ -721,9 +721,8 @@ p {
   transition: 0.4s;
 }
 
-/* .swiper-slide a {
-  background-color: rgba(83, 83, 83, 0.1);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(8px);
-  border-radius: 10px;
-} */
+@media (max-width: 767px) {
+  .card[data-tilt] {
+    transform: none !important;
+  }
+}
