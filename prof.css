@@ -720,9 +720,14 @@ p {
   scale: 0.8;
   transition: 0.4s;
 }
-
+.swiper-slide a {
+  color: goldenrod;
+}
 @media (max-width: 767px) {
   .card[data-tilt] {
     transform: none !important;
   }
+}
+.swiper-pagination-bullet-active {
+  background-color: goldenrod !important;
 }
