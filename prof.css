@@ -155,6 +155,7 @@ button {
   cursor: pointer;
   background: #c7c7c7;
   box-shadow: inset 5px 5px 4px #919191, inset -5px -5px 4px #fdfdfd;
+  color: rgb(0, 49, 112);
 }
 button:hover {
   transform: scale(0.9);
@@ -236,10 +237,10 @@ section {
 
 #resume {
   /* background: black; */
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(83, 83, 83, 0.1);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(8px);
+  border: none;
 }
 .resum {
   /* margin-top: 1vh; */
@@ -253,10 +254,11 @@ section {
 }
 
 #About {
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(83, 83, 83, 0.1);
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(8px);
+  border: none;
+  margin-top: 10px;
 }
 h1 {
   padding-bottom: 10px;
@@ -667,7 +669,7 @@ p {
 
 /* carousel */
 .swiper {
-  max-width: 1500px;
+  max-width: 1200px;
   /* width: 100%; */
   padding-top: 50px;
   padding-bottom: 50px;
@@ -697,7 +699,10 @@ p {
 }
 .project-text {
   color: white;
-  border: 2px inset red;
+  /* border: 2px inset red; */
+  background-color: rgba(83, 83, 83, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
   padding: 10px;
 }
@@ -714,4 +719,11 @@ p {
 .swiper-button-prev:hover {
   scale: 0.8;
   transition: 0.4s;
+}
+
+.swiper-slide a {
+  background-color: rgba(83, 83, 83, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
 }
