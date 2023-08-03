@@ -707,6 +707,8 @@ p {
 .project-section {
   text-align: center;
   margin-bottom: 40px;
+  color: goldenrod;
+  font-size: 40px;
 }
 .project-text {
   color: white;
@@ -738,7 +740,4 @@ p {
   .card[data-tilt] {
     transform: none !important;
   }
-}
-.swiper-pagination-bullet-active {
-  background-color: goldenrod !important;
 }
