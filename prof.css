@@ -741,3 +741,6 @@ p {
     transform: none !important;
   }
 }
+.swiper-pagination-bullet-active {
+  background-color: goldenrod !important;
+}
