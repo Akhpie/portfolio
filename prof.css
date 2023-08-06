@@ -54,11 +54,11 @@ body {
   box-shadow: 6px 5px 8px gray;
   border-radius: 15px;
   /* height: 75vh; */
-  height: 65vh;
+  height: 75vh;
 }
 @media (max-width: 768px) {
   .card {
-    height: 75vh;
+    height: 80vh;
   }
 }
 @media (max-width: 375px) {
