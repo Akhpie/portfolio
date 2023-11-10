@@ -38,7 +38,7 @@ body {
 
 #my-pic {
   border-radius: 50%;
-  height: 100px;
+  height: 120px;
 }
 
 .card {
@@ -279,9 +279,9 @@ h1 {
   text-align: center;
   color: #e6bc02 !important;
   padding-bottom: 10px;
-  font-size: 36px;
+  font-size: 36px !important;
   text-decoration: overline;
-  text-decoration: overline;
+  /* text-decoration: underline; */
 }
 
 form {
@@ -655,7 +655,7 @@ transform: translateY(30px);
   display: block;
   border: transparent;
   cursor: pointer;
-  width: 150px;
+  /* width: 150px; */
 }
 
 .down:hover {
