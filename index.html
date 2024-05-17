@@ -12,20 +12,35 @@
 </head>
 
 <body>
-  <!-- navbar -->
-  <header>
+  <!-- //! navbar -->
+  <!-- <header>
     <nav>
       <ul class="nav_links">
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#About">About</a></li>
+        <li><a href="#resume" class="nav-content">Resume</a></li>
+        <li><a href="#Projects" class="nav-content">Projects</a></li>
+        <li><a href="#About" class="nav-content">About</a></li>
+        <li><a class="cta nav-content" href="mailto:nandyala.akhil@hotmail.com">Contact</a></li>
       </ul>
     </nav>
-    <a class="cta" href="mailto:nandyala.akhil@hotmail.com"><button class="button-30">Contact</button></a>
+  </header> -->
+  <header>
+    <nav>
+      <div class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav_links" id="nav-links">
+        <li><a href="#resume" class="nav-content">Resume</a></li>
+        <li><a href="#Projects" class="nav-content">Projects</a></li>
+        <li><a href="#About" class="nav-content">About</a></li>
+        <li><a class="cta nav-content" href="mailto:nandyala.akhil@hotmail.com">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <!-- my card -->
+  <!-- //! my card -->
   <div class="container">
-    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.4">
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
       <img id="my-pic" src="./images/akhil pic for site.jpg" alt="my img" />
 
       <h2>Akhil Nandyala</h2>
@@ -237,6 +252,7 @@
 <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
   crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="prof.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
